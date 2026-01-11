@@ -50,7 +50,7 @@ const Hero = () => {
 
     return (
         <div className="">
-        <div className="relative w-full h-[600px] md:h-[700px] lg:h-[800px] overflow-hidden">
+        <div className="relative w-full h-[650px] md:h-[700px] lg:h-[800px] overflow-hidden  md:pt-0">
             {/* Background Image */}
             <motion.div 
                 className="absolute inset-0 z-0"
@@ -70,10 +70,10 @@ const Hero = () => {
             </motion.div>
 
             {/* Content */}
-            <div className="relative z-10 flex items-center justify-center h-full">
-                <div className="max-w-6xl mx-auto px-4   w-full">
+            <div className="relative z-10 flex items-center justify-center h-full pt-8 md:pt-0">
+                <div className="max-w-6xl mx-auto px-4 pt-4 w-full">
                     <div className="text-center ">
-                        <h1 className="md:text-[30px] md:mt-0 mt-[70px] text-[18px] font-bold text-white mb-4 h-[50px] flex items-center justify-center">
+                        <h1 className="md:text-[30px]  text-[18px] font-bold text-white mb-4 h-[50px] flex items-center justify-center">
                             <AnimatePresence mode="wait">
                                 <motion.span
                                     key={currentText}
@@ -103,7 +103,7 @@ const Hero = () => {
 
                     {/* Search Form */}
                     <motion.div 
-                        className="bg-white rounded-2xl shadow-2xl p-6 md:p-8"
+                        className="bg-white rounded-2xl shadow-2xl p-6 md:p-8 mb-8 md:mb-0"
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
